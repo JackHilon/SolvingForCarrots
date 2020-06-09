@@ -42,7 +42,7 @@ namespace SolvingForCarrots
             b = b % 1000;
 
             // description for each contestant
-            string description;
+            string description = " ";
             for (int i = 1; i <= a; i++)
             {
                 description = Console.ReadLine();
@@ -66,6 +66,7 @@ namespace SolvingForCarrots
             }
             catch(FormatException ex1)
             {
+                Console.WriteLine(ex1.Message);
                 Console.WriteLine("Format error !!!!");
                 line = Console.ReadLine();
                 res = StringLineToIntArray(line);
@@ -73,6 +74,7 @@ namespace SolvingForCarrots
             }
             catch(IndexOutOfRangeException ex2)
             {
+                Console.WriteLine(ex2.Message); 
                 Console.WriteLine("Enter two items (not one) !!!!");
                 line = Console.ReadLine();
                 res = StringLineToIntArray(line);
