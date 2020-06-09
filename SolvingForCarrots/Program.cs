@@ -7,6 +7,7 @@ namespace SolvingForCarrots
     {
         static void Main(string[] args)
         {
+            //
             DivideLine();
 
             var myLine = Console.ReadLine();
